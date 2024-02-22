@@ -3,16 +3,24 @@ import 'package:google_fonts/google_fonts.dart';
 
 TextTheme textTheme = TextTheme(
   headlineLarge: GoogleFonts.openSans(
-    fontWeight: FontWeight.w700,
-    fontSize: 24,
+    fontWeight: FontWeight.w500,
+    fontSize: 22,
     fontStyle: FontStyle.italic,
   ), 
+
+  headlineSmall: GoogleFonts.openSans(
+    fontWeight: FontWeight.w400,
+    fontSize: 16,
+    fontStyle: FontStyle.italic,
+  ), 
+  
 
   bodyMedium: GoogleFonts.openSans(
     fontWeight: FontWeight.w500,
     fontSize: 16,
     fontStyle: FontStyle.italic,
   ), 
+  
 
   labelLarge: GoogleFonts.openSans(
     fontWeight: FontWeight.w400,
