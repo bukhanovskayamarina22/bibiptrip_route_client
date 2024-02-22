@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:bibiptrip_route_client/widgets/paddings.dart';
 import 'package:flutter/material.dart';
 import 'get_started_page.dart';
 
