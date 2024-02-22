@@ -1,4 +1,3 @@
-import 'package:bibiptrip_route_client/main.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:flutter/foundation.dart';
 
