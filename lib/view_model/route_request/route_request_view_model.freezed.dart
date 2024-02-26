@@ -21,9 +21,9 @@ RouteRequestViewModel _$RouteRequestViewModelFromJson(
 
 /// @nodoc
 mixin _$RouteRequestViewModel {
-  DateTime get dateTime => throw _privateConstructorUsedError;
-  String get departureCity => throw _privateConstructorUsedError;
-  String get destinationCity => throw _privateConstructorUsedError;
+  DateTime? get dateTime => throw _privateConstructorUsedError;
+  String? get departureCity => throw _privateConstructorUsedError;
+  String? get destinationCity => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -37,7 +37,8 @@ abstract class $RouteRequestViewModelCopyWith<$Res> {
           $Res Function(RouteRequestViewModel) then) =
       _$RouteRequestViewModelCopyWithImpl<$Res, RouteRequestViewModel>;
   @useResult
-  $Res call({DateTime dateTime, String departureCity, String destinationCity});
+  $Res call(
+      {DateTime? dateTime, String? departureCity, String? destinationCity});
 }
 
 /// @nodoc
@@ -54,23 +55,23 @@ class _$RouteRequestViewModelCopyWithImpl<$Res,
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? dateTime = null,
-    Object? departureCity = null,
-    Object? destinationCity = null,
+    Object? dateTime = freezed,
+    Object? departureCity = freezed,
+    Object? destinationCity = freezed,
   }) {
     return _then(_value.copyWith(
-      dateTime: null == dateTime
+      dateTime: freezed == dateTime
           ? _value.dateTime
           : dateTime // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      departureCity: null == departureCity
+              as DateTime?,
+      departureCity: freezed == departureCity
           ? _value.departureCity
           : departureCity // ignore: cast_nullable_to_non_nullable
-              as String,
-      destinationCity: null == destinationCity
+              as String?,
+      destinationCity: freezed == destinationCity
           ? _value.destinationCity
           : destinationCity // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ) as $Val);
   }
 }
@@ -84,7 +85,8 @@ abstract class _$$RouteRequestViewModelImplCopyWith<$Res>
       __$$RouteRequestViewModelImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({DateTime dateTime, String departureCity, String destinationCity});
+  $Res call(
+      {DateTime? dateTime, String? departureCity, String? destinationCity});
 }
 
 /// @nodoc
@@ -99,23 +101,23 @@ class __$$RouteRequestViewModelImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? dateTime = null,
-    Object? departureCity = null,
-    Object? destinationCity = null,
+    Object? dateTime = freezed,
+    Object? departureCity = freezed,
+    Object? destinationCity = freezed,
   }) {
     return _then(_$RouteRequestViewModelImpl(
-      dateTime: null == dateTime
+      dateTime: freezed == dateTime
           ? _value.dateTime
           : dateTime // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      departureCity: null == departureCity
+              as DateTime?,
+      departureCity: freezed == departureCity
           ? _value.departureCity
           : departureCity // ignore: cast_nullable_to_non_nullable
-              as String,
-      destinationCity: null == destinationCity
+              as String?,
+      destinationCity: freezed == destinationCity
           ? _value.destinationCity
           : destinationCity // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -126,19 +128,17 @@ class _$RouteRequestViewModelImpl
     with DiagnosticableTreeMixin
     implements _RouteRequestViewModel {
   const _$RouteRequestViewModelImpl(
-      {required this.dateTime,
-      required this.departureCity,
-      required this.destinationCity});
+      {this.dateTime, this.departureCity, this.destinationCity});
 
   factory _$RouteRequestViewModelImpl.fromJson(Map<String, dynamic> json) =>
       _$$RouteRequestViewModelImplFromJson(json);
 
   @override
-  final DateTime dateTime;
+  final DateTime? dateTime;
   @override
-  final String departureCity;
+  final String? departureCity;
   @override
-  final String destinationCity;
+  final String? destinationCity;
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -190,19 +190,19 @@ class _$RouteRequestViewModelImpl
 
 abstract class _RouteRequestViewModel implements RouteRequestViewModel {
   const factory _RouteRequestViewModel(
-      {required final DateTime dateTime,
-      required final String departureCity,
-      required final String destinationCity}) = _$RouteRequestViewModelImpl;
+      {final DateTime? dateTime,
+      final String? departureCity,
+      final String? destinationCity}) = _$RouteRequestViewModelImpl;
 
   factory _RouteRequestViewModel.fromJson(Map<String, dynamic> json) =
       _$RouteRequestViewModelImpl.fromJson;
 
   @override
-  DateTime get dateTime;
+  DateTime? get dateTime;
   @override
-  String get departureCity;
+  String? get departureCity;
   @override
-  String get destinationCity;
+  String? get destinationCity;
   @override
   @JsonKey(ignore: true)
   _$$RouteRequestViewModelImplCopyWith<_$RouteRequestViewModelImpl>

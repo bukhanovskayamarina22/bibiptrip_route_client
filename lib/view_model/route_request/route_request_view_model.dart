@@ -7,9 +7,9 @@ part 'route_request_view_model.g.dart';
 @freezed
 class RouteRequestViewModel with _$RouteRequestViewModel {
   const factory RouteRequestViewModel({
-    required DateTime dateTime,
-    required String departureCity,
-    required String destinationCity,
+    DateTime? dateTime,
+    String? departureCity,
+    String? destinationCity,
   }) = _RouteRequestViewModel;
 
   factory RouteRequestViewModel.fromJson(Map<String, dynamic> json) =>
