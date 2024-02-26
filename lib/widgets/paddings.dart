@@ -31,39 +31,6 @@ class PaddingLeft24 extends StatelessWidget {
   }
 }
 
-class PaddingAll12 extends StatelessWidget {
-  final Widget? child;
-  const PaddingAll12({
-    super.key,
-    this.child,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(12),
-      child: child,
-    );
-  }
-}
-
-
-class PaddingTop8 extends StatelessWidget {
-  final Widget? child;
-  const PaddingTop8({
-    super.key,
-    this.child,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 8),
-      child: child,
-    );
-  }
-}
-
 class PaddingTop24 extends StatelessWidget {
   final Widget? child;
   const PaddingTop24({
@@ -77,5 +44,38 @@ class PaddingTop24 extends StatelessWidget {
       padding: const EdgeInsets.only(top: 24),
       child: child,
     );
+  }
+}
+
+class PaddingBottom24 extends StatelessWidget {
+  final Widget? child;
+  const PaddingBottom24({
+    super.key,
+    this.child,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 24),
+      child: child,
+    );
+  }
+}
+
+
+
+class PaddingLeft4 extends StatelessWidget {
+  final Widget? child;
+  const PaddingLeft4({
+    super.key, this.child,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(left: 4),
+      child: child
+  ,);
   }
 }
