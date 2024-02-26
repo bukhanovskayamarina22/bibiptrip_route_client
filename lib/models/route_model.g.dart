@@ -10,9 +10,9 @@ _$RouteModelImpl _$$RouteModelImplFromJson(Map<String, dynamic> json) =>
     _$RouteModelImpl(
       id: json['id'] as String,
       routeId: json['routeId'] as String,
-      driverName: json['driverName'] as String? ?? "Неизвестно",
+      driverName: json['driverName'] as String?,
       carModel: json['carModel'] as String,
-      costOfRaid: (json['costOfRaid'] as num).toDouble(),
+      costOfRaid: json['costOfRaid'] as String,
       departureCity: json['departureCity'] as String,
       destinationCity: json['destinationCity'] as String,
       departingDatetime: json['departingDatetime'] as String,

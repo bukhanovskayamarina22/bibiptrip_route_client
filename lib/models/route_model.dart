@@ -8,9 +8,9 @@ abstract class RouteModel with _$RouteModel {
   const factory RouteModel({
     required String id,
     required String routeId,
-    @Default("Неизвестно") String driverName,
+    String? driverName,
     required String carModel,
-    required double costOfRaid,
+    required String costOfRaid,
     required String departureCity,
     required String destinationCity,
     required String departingDatetime,

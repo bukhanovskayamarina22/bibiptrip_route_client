@@ -22,9 +22,9 @@ RouteModel _$RouteModelFromJson(Map<String, dynamic> json) {
 mixin _$RouteModel {
   String get id => throw _privateConstructorUsedError;
   String get routeId => throw _privateConstructorUsedError;
-  String get driverName => throw _privateConstructorUsedError;
+  String? get driverName => throw _privateConstructorUsedError;
   String get carModel => throw _privateConstructorUsedError;
-  double get costOfRaid => throw _privateConstructorUsedError;
+  String get costOfRaid => throw _privateConstructorUsedError;
   String get departureCity => throw _privateConstructorUsedError;
   String get destinationCity => throw _privateConstructorUsedError;
   String get departingDatetime => throw _privateConstructorUsedError;
@@ -47,9 +47,9 @@ abstract class $RouteModelCopyWith<$Res> {
   $Res call(
       {String id,
       String routeId,
-      String driverName,
+      String? driverName,
       String carModel,
-      double costOfRaid,
+      String costOfRaid,
       String departureCity,
       String destinationCity,
       String departingDatetime,
@@ -73,7 +73,7 @@ class _$RouteModelCopyWithImpl<$Res, $Val extends RouteModel>
   $Res call({
     Object? id = null,
     Object? routeId = null,
-    Object? driverName = null,
+    Object? driverName = freezed,
     Object? carModel = null,
     Object? costOfRaid = null,
     Object? departureCity = null,
@@ -92,10 +92,10 @@ class _$RouteModelCopyWithImpl<$Res, $Val extends RouteModel>
           ? _value.routeId
           : routeId // ignore: cast_nullable_to_non_nullable
               as String,
-      driverName: null == driverName
+      driverName: freezed == driverName
           ? _value.driverName
           : driverName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       carModel: null == carModel
           ? _value.carModel
           : carModel // ignore: cast_nullable_to_non_nullable
@@ -103,7 +103,7 @@ class _$RouteModelCopyWithImpl<$Res, $Val extends RouteModel>
       costOfRaid: null == costOfRaid
           ? _value.costOfRaid
           : costOfRaid // ignore: cast_nullable_to_non_nullable
-              as double,
+              as String,
       departureCity: null == departureCity
           ? _value.departureCity
           : departureCity // ignore: cast_nullable_to_non_nullable
@@ -143,9 +143,9 @@ abstract class _$$RouteModelImplCopyWith<$Res>
   $Res call(
       {String id,
       String routeId,
-      String driverName,
+      String? driverName,
       String carModel,
-      double costOfRaid,
+      String costOfRaid,
       String departureCity,
       String destinationCity,
       String departingDatetime,
@@ -167,7 +167,7 @@ class __$$RouteModelImplCopyWithImpl<$Res>
   $Res call({
     Object? id = null,
     Object? routeId = null,
-    Object? driverName = null,
+    Object? driverName = freezed,
     Object? carModel = null,
     Object? costOfRaid = null,
     Object? departureCity = null,
@@ -186,10 +186,10 @@ class __$$RouteModelImplCopyWithImpl<$Res>
           ? _value.routeId
           : routeId // ignore: cast_nullable_to_non_nullable
               as String,
-      driverName: null == driverName
+      driverName: freezed == driverName
           ? _value.driverName
           : driverName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       carModel: null == carModel
           ? _value.carModel
           : carModel // ignore: cast_nullable_to_non_nullable
@@ -197,7 +197,7 @@ class __$$RouteModelImplCopyWithImpl<$Res>
       costOfRaid: null == costOfRaid
           ? _value.costOfRaid
           : costOfRaid // ignore: cast_nullable_to_non_nullable
-              as double,
+              as String,
       departureCity: null == departureCity
           ? _value.departureCity
           : departureCity // ignore: cast_nullable_to_non_nullable
@@ -232,7 +232,7 @@ class _$RouteModelImpl implements _RouteModel {
   const _$RouteModelImpl(
       {required this.id,
       required this.routeId,
-      this.driverName = "Неизвестно",
+      this.driverName,
       required this.carModel,
       required this.costOfRaid,
       required this.departureCity,
@@ -250,12 +250,11 @@ class _$RouteModelImpl implements _RouteModel {
   @override
   final String routeId;
   @override
-  @JsonKey()
-  final String driverName;
+  final String? driverName;
   @override
   final String carModel;
   @override
-  final double costOfRaid;
+  final String costOfRaid;
   @override
   final String departureCity;
   @override
@@ -335,9 +334,9 @@ abstract class _RouteModel implements RouteModel {
   const factory _RouteModel(
       {required final String id,
       required final String routeId,
-      final String driverName,
+      final String? driverName,
       required final String carModel,
-      required final double costOfRaid,
+      required final String costOfRaid,
       required final String departureCity,
       required final String destinationCity,
       required final String departingDatetime,
@@ -353,11 +352,11 @@ abstract class _RouteModel implements RouteModel {
   @override
   String get routeId;
   @override
-  String get driverName;
+  String? get driverName;
   @override
   String get carModel;
   @override
-  double get costOfRaid;
+  String get costOfRaid;
   @override
   String get departureCity;
   @override
