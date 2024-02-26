@@ -1,21 +1,22 @@
-import 'package:bibiptrip_route_client/pages/search_page.dart';
 import 'package:bibiptrip_route_client/widgets/paddings.dart';
+import 'package:bibiptrip_route_client/widgets/app_scaffold.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class GetStartedPage extends StatelessWidget {
+  const GetStartedPage({super.key});
+
   void _navigateToMainPage(BuildContext context) {
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (context) => const SearchPage()),
+      MaterialPageRoute(builder: (context) => const AppScaffold()),
     );
   }
-
   void _launchURL(String url) async {
     try {
       await launchUrl(Uri.parse(url));
-    } on Exception catch (e) {
-      throw e;
+    } on Exception catch (_) {
+      rethrow;
     }
   }
 
@@ -40,7 +41,7 @@ class GetStartedPage extends StatelessWidget {
                         _launchURL('https://www.example.com'),
                     child: const Text('Terms and Conditions'),
                   ),
-                  const PaddingTop8(),
+                  const Padding(padding: EdgeInsets.only(top: 8)),
                   TextButton(
                     onPressed: () =>
                         _launchURL('https://www.example.com'),
