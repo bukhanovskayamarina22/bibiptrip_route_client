@@ -2,62 +2,53 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 TextTheme textTheme = TextTheme(
-  headlineLarge: GoogleFonts.openSans(
-    fontWeight: FontWeight.w500,
-    fontSize: 22,
-    fontStyle: FontStyle.italic,
-  ), 
-
-  headlineSmall: GoogleFonts.openSans(
-    fontWeight: FontWeight.w400,
-    fontSize: 16,
-    fontStyle: FontStyle.italic,
-  ), 
-  
-
-  bodyMedium: GoogleFonts.openSans(
-    fontWeight: FontWeight.w500,
-    fontSize: 16,
-    fontStyle: FontStyle.italic,
-  ), 
-  
-
-  labelLarge: GoogleFonts.openSans(
-    fontWeight: FontWeight.w400,
-    fontSize: 14,
-  ), 
-
-  labelMedium: GoogleFonts.openSans(
-    fontWeight: FontWeight.w400,
-    fontSize: 12,
-  )
-);
+    headlineLarge: GoogleFonts.openSans(
+      fontWeight: FontWeight.w500,
+      fontSize: 22,
+      fontStyle: FontStyle.italic,
+    ),
+    headlineSmall: GoogleFonts.openSans(
+        fontWeight: FontWeight.w400,
+        fontSize: 16,
+        fontStyle: FontStyle.italic,
+        height: 1),
+    bodyMedium: GoogleFonts.openSans(
+        fontWeight: FontWeight.w500,
+        fontSize: 16,
+        fontStyle: FontStyle.italic,
+        ),
+    labelLarge: GoogleFonts.openSans(
+      fontWeight: FontWeight.w400,
+      fontSize: 14,
+    ),
+    labelMedium: GoogleFonts.openSans(
+        fontWeight: FontWeight.w400, fontSize: 12, height: 1));
 
 const lightColorScheme = ColorScheme(
-    brightness: Brightness.light,
-    primary: Color(0xFF22BB9C),
-    onPrimary: Color(0xFFFFFFFF),
-    primaryContainer: Color(0xFFAAE6D9),
-    onPrimaryContainer: Color(0xFF09332A),
-    secondary: Color(0xFF545453),
-    onSecondary: Color(0xFFFFFFFF),
-    secondaryContainer: Color(0xFFE6E6E5),
-    onSecondaryContainer: Color(0xFF333332),
-    tertiary: Color(0xFFC3D7E5),
-    onTertiary: Color(0xFFFFFFFF),
-    tertiaryContainer: Color(0xFFDBE1E6),
-    onTertiaryContainer: Color(0xFF2B3033),
-    error: Color(0xFFFE938C),
-    onError: Color(0xFFFFFFFF),
-    errorContainer: Color(0xFFE6C7C5),
-    onErrorContainer: Color(0xFF331E1C),
-    background: Color(0xFFfbfcfc),
-    onBackground: Color(0xFF313333),
-    surface: Color(0xFFfbfcfc),
-    onSurface: Color(0xFF313333),
-    surfaceVariant: Color(0xFFdae6e3),
-    onSurfaceVariant: Color(0xFF556663),
-    outline: Color(0xFF809994),
+  brightness: Brightness.light,
+  primary: Color(0xFF22BB9C),
+  onPrimary: Color(0xFFFFFFFF),
+  primaryContainer: Color(0xFFAAE6D9),
+  onPrimaryContainer: Color(0xFF09332A),
+  secondary: Color(0xFF545453),
+  onSecondary: Color(0xFFFFFFFF),
+  secondaryContainer: Color(0xFFE6E6E5),
+  onSecondaryContainer: Color(0xFF333332),
+  tertiary: Color(0xFFC3D7E5),
+  onTertiary: Color(0xFFFFFFFF),
+  tertiaryContainer: Color(0xFFDBE1E6),
+  onTertiaryContainer: Color(0xFF2B3033),
+  error: Color(0xFFFE938C),
+  onError: Color(0xFFFFFFFF),
+  errorContainer: Color(0xFFE6C7C5),
+  onErrorContainer: Color(0xFF331E1C),
+  background: Color(0xFFfbfcfc),
+  onBackground: Color(0xFF313333),
+  surface: Color(0xFFfbfcfc),
+  onSurface: Color(0xFF313333),
+  surfaceVariant: Color(0xFFdae6e3),
+  onSurfaceVariant: Color(0xFF556663),
+  outline: Color(0xFF809994),
 );
 
 // const darkColorScheme = ColorScheme(
