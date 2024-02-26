@@ -36,7 +36,7 @@ class NetworkRoutesRepository implements IRoutesRepository {
             departingDatetime: route["DepartureTime"],
             arrivingDatetime: route["ArrivalTime"],
             departureLocation: route["Departure"]["Name"],
-            arrivingLocation: route["Destination"]["Уфа ТРК Иремель"]);
+            arrivingLocation: route["Destination"]["Name"]);
       }).toList();
 
       return routes;

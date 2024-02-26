@@ -5,7 +5,4 @@ abstract class IRoutesRepository {
       {required String date,
       required String departureCity,
       required String destinationCity});
-  // Future<Route> createRoute(Route route);
-  // Future<void> updateRoute(Route route);
-  // Future<void> deleteRoute(String id);
 }
